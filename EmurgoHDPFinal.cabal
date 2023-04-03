@@ -1,0 +1,33 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           EmurgoHDPFinal
+version:        0.1.0.0
+synopsis:       Simple GUI game to practice Haskell
+description:    Please see the README on GitHub at <https://github.com/DeCentN2Madness/EmurgoHDPFinal#readme>
+category:       Game
+homepage:       https://github.com/DeCentN2Madness/EmurgoHDPFinal#readme
+bug-reports:    https://github.com/DeCentN2Madness/EmurgoHDPFinal/issues
+author:         Jeff "DeCentN2Madness" Hales
+maintainer:     7983+DeCentN2Madness@users.noreply.github.com
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    .hlint.yaml
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/DeCentN2Madness/EmurgoHDPFinal
+
+executable EmurgoHDPFinal-exe
+  main-is: Main.hs
+  hs-source-dirs:
+      app
+  build-depends:
+      base >=4.14.3 && <5
+  default-language: Haskell2010

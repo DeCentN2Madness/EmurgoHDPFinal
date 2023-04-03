@@ -1,0 +1,2 @@
+# I don't like the way infixed non-operator functions typically read
+- ignore: {name: "Use infix"}

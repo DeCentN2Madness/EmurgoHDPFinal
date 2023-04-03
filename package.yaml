@@ -1,0 +1,23 @@
+name:                EmurgoHDPFinal
+version:             0.1.0.0
+github:              'DeCentN2Madness/EmurgoHDPFinal'
+license:             MIT
+author:              'Jeff "DeCentN2Madness" Hales'
+maintainer:          '7983+DeCentN2Madness@users.noreply.github.com'
+
+description:         Please see the README on GitHub at <https://github.com/DeCentN2Madness/EmurgoHDPFinal#readme>
+synopsis:            Simple GUI game to practice Haskell
+category:            Game
+
+extra-source-files:
+- .hlint.yaml
+- README.md
+
+dependencies:                       # nixpkgs pinned version
+- base     >= 4.14.3   && < 5       # 4.16.4.0
+
+executables:
+  EmurgoHDPFinal-exe:
+    main:                Main.hs
+    source-dirs:         app
+    other-modules:       []
