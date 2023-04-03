@@ -16,10 +16,13 @@
     let
       pkgs = nixpkgs.legacyPackages.${system};
       haskellEnv = pkgs.haskellPackages.ghcWithPackages (hp: with hp; [
+        # haskell devenv tools
         cabal-install
         haskell-language-server
         hlint
         hpack
+        # project module imports
+        gloss
       ]);
     in {
       devShells.default = pkgs.mkShell {

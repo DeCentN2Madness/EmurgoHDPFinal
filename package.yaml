@@ -15,6 +15,7 @@ extra-source-files:
 
 dependencies:                       # nixpkgs pinned version
 - base     >= 4.14.3   && < 5       # 4.16.4.0
+- gloss    >= 1.13.2.2 && < 1.15    # 1.13.2.2
 
 executables:
   EmurgoHDPFinal-exe:

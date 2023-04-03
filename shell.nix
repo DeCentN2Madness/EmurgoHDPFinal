@@ -3,10 +3,13 @@
 
 let
   haskellEnv = pkgs.haskellPackages.ghcWithPackages (hpkgs: with hpkgs; [
+    # haskell devenv tools
     cabal-install
     haskell-language-server
     hlint
     hpack
+    # project module imports
+    gloss
   ]);
 
 in
